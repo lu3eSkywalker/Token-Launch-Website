@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-shrink-0 items-center absolute left-0 pl-6">
 
-            <button onClick={() => router.push('/create-token')}><Image alt='image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMw4BPBYmGXV2BF5Hhoxr8m3pMRLG_1iJsg&s' className='h-10' /></button>
+            <button onClick={() => router.push('/create-token')}><Image alt='image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMw4BPBYmGXV2BF5Hhoxr8m3pMRLG_1iJsg&s' className='h-10' width={250} height={40}/></button>
             
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-6">

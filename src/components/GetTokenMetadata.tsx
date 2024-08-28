@@ -22,7 +22,6 @@ const GetTokenMetadata = () => {
       const connection = new Connection("https://api.devnet.solana.com");
       const metaplex = Metaplex.make(connection);
     
-    //   const mintAddress = new PublicKey("7P7FTcUnLKfrNobkmrU64uCoyg4nigVSJbEHqD8dVonp");
     const mintAddress = new PublicKey(mintAddressToken);
     
       let tokenName;
@@ -125,7 +124,7 @@ const GetTokenMetadata = () => {
             </p>
 
             
-            {imageAvailable ? (<p><Image src={tokenImage} alt='image' className='w-[150px] h-[150px] rounded-full object-cover mx-auto' /></p>): (<button className='bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300' onClick={() => fetchLogo()}>Fetch Logo Again</button>)}
+            {imageAvailable ? (<p><Image src={tokenImage} alt='image' className='w-[150px] h-[150px] rounded-full object-cover mx-auto' width={300} height={50}  /></p>): (<button className='bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300' onClick={() => fetchLogo()}>Fetch Logo Again</button>)}
         </div>
         )}
 
